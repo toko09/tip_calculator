@@ -15,12 +15,16 @@
     color: var(--clr-light-green);
     font-weight: bold;
 }
+body{
+    display: grid;
+    place-items: center;
+}
 .outsideBox{
     display: flex;
+    place-items: center;
     background-color: var(--clr-light-gray);
 }
 .outsideimg{
-    margin: auto;
     padding: 4rem;    
 }
 .box{
@@ -32,7 +36,7 @@
     
 }
 .top > *{
-    margin: 1rem 2rem;   /* fix this bro*/
+    margin: 1rem 2rem;  
 }
 .inputBill{
     display: block;
