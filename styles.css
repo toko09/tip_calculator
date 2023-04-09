@@ -1,0 +1,176 @@
+:root{
+    --clr-green:  hsl(172, 67%, 45%);
+    --clr-dark-green: hsl(183, 100%, 15%);
+    --clr-light-green:hsl(186, 14%, 43%);
+    --clr-light-gray:hsl(185, 41%, 84%); 
+    --clr-very-light-gray: hsl(189, 41%, 97%);
+    --white:hsl(0, 0%, 100%);
+    --font-mono: 'Space Mono', monospace;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-mono);
+    color: var(--clr-light-green);
+    font-weight: bold;
+}
+.outsideBox{
+    display: flex;
+    background-color: var(--clr-light-gray);
+}
+.outsideimg{
+    margin: auto;
+    padding: 4rem;    
+}
+.box{
+    margin-top: -1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.top > *{
+    margin: 1rem 2rem;   /* fix this bro*/
+}
+.inputBill{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--clr-very-light-gray);
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1rem;
+    text-align: right;
+    font-size: 2rem;
+    color: var(--clr-dark-green);
+    font-weight: 600;
+}
+.inputBill:focus{
+    outline: none;
+    border:3px solid var(--clr-green) ;
+    
+}
+.selectTip{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.selectTip > button {
+    background-color: var(--clr-dark-green);
+}
+.selectTip * {
+    padding: 1rem;
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+.selectTip > input {
+    width: 100%;
+    text-align: center;
+    color: var(--clr-dark-green);
+    background-color: var(--clr-very-light-gray);    
+}
+.selectTip > input::placeholder{
+    color:var(--clr-dark-green);
+}
+.selectTip>button:hover, .selectTip>button:focus{
+    background-color: var(--clr-green);
+    color: var(--clr-dark-green);
+}
+.selectTip>input:focus{
+    outline: none;
+    border:3px solid var(--clr-green) ;
+}
+.inputPeople{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--clr-very-light-gray);
+    background-image: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1rem;
+    text-align: right;
+    font-size: 2rem;
+    color: var(--clr-dark-green);
+    font-weight: 600;
+    padding: 0 1rem;
+    border:3px solid var(--clr-very-light-gray) ;
+}
+.inputPeople:focus{
+    outline: none;
+    border:3px solid var(--clr-green) ;
+
+}
+.bottom{
+    background-color: var(--clr-dark-green);
+    margin: 0 2rem;
+    border-radius: 10px;
+    
+} 
+.bottom * {
+    margin: 0 0.5rem;
+}
+.firstP{
+    margin-top: 2rem;
+    color: var(--white);
+}
+.finalprice{
+    margin-top: 2rem;
+    text-align: right;
+    color: var(--clr-green);
+}
+
+.tipbypeople, .totaltip{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.resetbutton{
+    border: none;
+    width: 80%;
+    margin: 1rem 10%;
+    padding: 1rem;
+    color: var(--clr-dark-green);
+    background-color: var(--clr-green);
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.error{
+    display: inline;
+    float: right;
+    color: red;
+}
+
+@media (min-width:1000px){
+    body{
+        background-color: var(--clr-light-gray);
+    }
+    .box{
+        max-width: 1000px;
+        margin: auto;
+        flex-direction: row;
+        
+       }
+    .selectTip{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .top{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .bottom{
+        flex-basis: 0;
+        flex-grow: 1;
+        margin: 1.5rem;
+        
+    }
+    .resetbutton{
+        margin-top: 5rem;
+    }
+
+}
+

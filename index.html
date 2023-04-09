@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Tip Counter</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="outsideBox">
+			<img class="outsideimg" src="/images/logo.svg" alt="" />
+		</div>
+		<form class="box" id="box">
+			<div class="top">
+				<div class="inputDiv">
+                    <label  for="inputBill" >Bill</label>
+				    <input type="number"class="inputBill"/>
+				</div>
+                <p>Select Tip %</p>
+				<div class="selectTip">
+					<button type="button" class="percentButton" onclick="countTip(5)">5%</button>
+                    <button type="button" class="percentButton" onclick="countTip(10)">10%</button>
+                    <button type="button" class="percentButton" onclick="countTip(15)">15%</button>
+                    <button type="button" class="percentButton" onclick="countTip(25)">25%</button>
+                    <button type="button" class="percentButton" onclick="countTip(50)">50%</button>
+                    <input type="number" class="customTip" oninput="countTip()" placeholder="Custom">
+				</div>
+                <div class="numberof">
+                    <label for="inputPeople">Number of People</label>
+                    <p class="error"></p>
+                    <input type="number"  oninput="countTip()" class="inputPeople">
+                </div>
+
+			</div>
+			<div class="bottom">
+                <div class="tipbypeople">
+                    <div>
+                        <p class="firstP">Tip Amount</p>
+                        <p>/ person</p>
+                    </div>
+                    <h1 class="finalprice" id="tipByPerson">$0.00</h1>
+                </div>
+                <div class="totaltip">
+                    <div>
+                        <p class="firstP">Total</p>
+                        <p>/ person</p>
+                    </div>
+                    <h1 class="finalprice" id="priceByPerson">$0.00</h1>
+                </div>
+                <button class="resetbutton" type="reset" onclick="resetPage()">RESET</button>
+            </div>
+		</form>
+        <script src="script.js"></script>
+	</body>
+</html>
