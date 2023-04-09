@@ -25,7 +25,8 @@ body{
     background-color: var(--clr-light-gray);
 }
 .outsideimg{
-    padding: 4rem;    
+    padding: 4rem;
+
 }
 .box{
     margin-top: -1rem;
@@ -43,7 +44,7 @@ body{
     width: 100%;
     border: none;
     background-color: var(--clr-very-light-gray);
-    background-image: url(/images/icon-dollar.svg);
+    background-image: url(./images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 1rem;
@@ -100,7 +101,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
     border: none;
     background-color: var(--clr-very-light-gray);
-    background-image: url(/images/icon-person.svg);
+    background-image: url(./images/icon-person.svg);
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 1rem;
