@@ -15,18 +15,15 @@
     color: var(--clr-light-green);
     font-weight: bold;
 }
-body{
-    display: grid;
-    place-items: center;
-}
+
 .outsideBox{
     display: flex;
-    place-items: center;
     background-color: var(--clr-light-gray);
 }
 .outsideimg{
     padding: 4rem;
-    margin-top: 4rem;
+    margin: auto;
+    margin-top: 6rem;
 }
 .box{
     margin-top: -1rem;
@@ -34,7 +31,6 @@ body{
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    
 }
 .top > *{
     margin: 1rem 2rem;  
