@@ -44,10 +44,16 @@
     background-position-y: center;
     background-position-x: 1rem;
     text-align: right;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--clr-dark-green);
     font-weight: 600;
+    padding: 0.5rem;
+
 }
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
 .inputBill:focus{
     outline: none;
     border:3px solid var(--clr-green) ;
@@ -95,10 +101,10 @@
     background-position-y: center;
     background-position-x: 1rem;
     text-align: right;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--clr-dark-green);
     font-weight: 600;
-    padding: 0 1rem;
+    padding:0.5rem;
     border:3px solid var(--clr-very-light-gray) ;
 }
 .inputPeople:focus{
